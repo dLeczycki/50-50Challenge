@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #444;
+  overflow-x: hidden;
+}
+
+div.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+  background-color: #ff7979;
+  border-radius: 50%;
+  transition: 0.7s;
+  z-index: 2;
+}
+
+div.menu > i {
+  position: absolute;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+div.menu > i.fa-bars {
+  right: 20%;
+  bottom: 20%;
+}
+
+div.menu > i.fa-times {
+  left: 20%;
+  bottom: 20%;
+}
+
+div.menu.active {
+  transform: translate(-50%, -50%) rotate(-90deg);
+}
+
+main {
+  padding: 50px;
+  background-color: #fff;
+  transition: 0.7s;
+  transform-origin: 0% 0;
+}
+
+div.menu.active + main {
+  transform: rotate(-20deg);
+}
+
+article {
+  margin-top: 60px;
+}
+
+article h1 {
+  font-size: 3.6rem;
+  margin-bottom: -8px;
+}
+
+article small {
+  font-size: 1.4rem;
+  color: #777;
+  font-style: italic;
+}
+
+article p {
+  margin: 20px auto;
+  text-align: justify;
+  font-size: 1.4rem;
+  font-weight: lighter;
+}
+
+article h2 {
+  font-size: 2.4rem;
+  margin: 20px 0;
+}
+
+article img {
+  width: 100%;
+}
+
+nav {
+  position: fixed;
+  bottom: 5%;
+  width: 400px;
+  left: 0;
+  transform: translateX(-50%);
+  transition: 0.8s;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  margin-left: 0;
+  padding: 20px 10px;
+  transition: 0.7s;
+}
+
+nav ul li a {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+}
+
+nav ul li a i {
+  margin-right: 10px;
+}
+
+div.menu.active ~ nav ul li {
+  transition-delay: 0.3s;
+}
+
+div.menu.active ~ nav ul li:nth-child(1) {
+  margin-left: 220px;
+}
+
+div.menu.active ~ nav ul li:nth-child(2) {
+  margin-left: 240px;
+}
+
+div.menu.active ~ nav ul li:nth-child(3) {
+  margin-left: 260px;
+}
