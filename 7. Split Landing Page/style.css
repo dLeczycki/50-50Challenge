@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+body {
+  overflow: hidden;
+}
+
+div.container {
+  height: 100vh;
+}
+
+div.container.left-active section.ps {
+  width: 70%;
+}
+
+div.container.left-active section.xbox {
+  left: 70%;
+  width: 30%;
+}
+
+div.container.right-active section.ps {
+  width: 30%;
+}
+
+div.container.right-active section.xbox {
+  left: 30%;
+  width: 70%;
+}
+
+section {
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: 0.9s ease-in-out;
+  overflow: hidden;
+}
+
+section.ps {
+  left: 0;
+  background-image: url("src/ps.jpg");
+}
+
+section.ps::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(87, 84, 236, 0.7);
+}
+
+section.xbox {
+  left: 50%;
+  background-image: url("src/xbox.jpg");
+}
+
+section.xbox::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  text-align: center;
+  white-space: nowrap;
+  font-size: 60px;
+  text-shadow: 0 0 3px black;
+}
+
+button {
+  position: absolute;
+  top: calc(30% + 50px + 50px);
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 20px 50px;
+  background-color: transparent;
+  color: white;
+  font-size: 24px;
+  text-transform: uppercase;
+  border: 3px solid white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button.buy-ps:hover {
+  background-color: rgb(87, 84, 236);
+  border: 3px solid rgb(87, 84, 236);
+}
+
+button.buy-xbox:hover {
+  background-color: rgb(28, 122, 28);
+  border: 3px solid rgb(28, 122, 28);
+}
