@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Oswald", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  letter-spacing: 1px;
+  color: white;
+  font-size: 10px;
+}
+
+body {
+  background-color: steelblue;
+  height: 100vh;
+}
+
+form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 40px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+}
+
+form h1 {
+  display: block;
+  text-align: center;
+  font-size: 3rem;
+  padding: 10px;
+}
+
+form div.form-control {
+  position: relative;
+  font-size: 1.8rem;
+  padding: 10px 0 30px;
+  width: 300px;
+}
+
+form div.form-control label {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  line-height: 50px;
+  cursor: text;
+}
+
+form div.form-control label span {
+  position: relative;
+  top: 0;
+  transition: 0.2s cubic-bezier(0.21, 0.37, 0.06, 1.34);
+}
+
+form div.form-control input {
+  width: 100%;
+  background-color: transparent;
+  height: 50px;
+  border: none;
+  border-bottom: 2px solid white;
+  color: white;
+  font-size: 1.8rem;
+  line-height: 50px;
+  transition-duration: 0.2s;
+}
+
+form div.form-control input:focus,
+form div.form-control input.notEmpty {
+  outline: none;
+  border: none;
+  border-bottom: 2px solid lightblue;
+}
+
+form div.form-control input:focus + label span,
+form div.form-control input.notEmpty + label span {
+  top: -30px;
+  color: lightblue;
+}
+
+form div.form-control input:-webkit-autofill,
+form div.form-control input:-webkit-autofill:hover,
+form div.form-control input:-webkit-autofill:focus,
+form div.form-control input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px rgba(255, 255, 255, 0) inset;
+  -webkit-text-fill-color: white;
+  caret-color: white;
+  box-shadow: 0 0 0 30px rgba(255, 255, 255, 0) inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+form button {
+  display: block;
+  width: 100%;
+  margin: 10px auto;
+  padding: 15px;
+  background-color: lightblue;
+  color: black;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1.6rem;
+  transition-duration: 0.1s;
+}
+
+form button:focus {
+  outline: 0;
+}
+
+form button:active {
+  border: none;
+  transform: scale(0.98);
+}
+
+form p {
+  display: block;
+  padding-top: 20px;
+  font-size: 1.6rem;
+}
+
+form p a {
+  color: lightblue;
+  text-decoration: none;
+}
