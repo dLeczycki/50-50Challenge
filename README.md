@@ -1,6 +1,6 @@
 # 50-50Challenge
 
-50 days 50 projects challenge inspired by repo of [Brad Traversy](https://github.com/bradtraversy). Projects are made only with HTML/CSS/JS.
+50 days 50 projects challenge inspired by repo of [Brad Traversy](https://github.com/bradtraversy). Projects are made with HTML/CSS/JS. Although there are ready applications on brads repo, I watched result of his ideas and coded them only by myself.
 
 # Background
 
