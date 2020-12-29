@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #686de0;
+}
+
+div.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 774px;
+  padding: 40px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+@media (max-width: 860px) {
+  div.container {
+    width: 90%;
+  }
+}
+
+div.container h2 {
+  color: #888;
+  letter-spacing: 3px;
+  font-size: 2rem;
+}
+
+div.container p.joke {
+  padding: 70px 0px;
+  font-size: 3rem;
+}
+
+div.container button.getJokeBtn {
+  padding: 15px 40px;
+  color: white;
+  background-color: #9f68e0;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.6rem;
+  box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+div.container button.getJokeBtn:focus {
+  outline: 0;
+}
+
+div.container button.getJokeBtn:active {
+  border: none;
+  transform: scale(0.98);
+}
