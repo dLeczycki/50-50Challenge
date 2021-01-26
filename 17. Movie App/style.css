@@ -166,8 +166,7 @@ form input:focus {
     max-height: 80vh;
   }
 
-  .movie-img {
-    height: 80%;
-    width: auto;
+  .movie img {
+    height: 70%;
   }
 }
