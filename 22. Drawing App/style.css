@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --blue: rgb(28, 96, 241);
+}
+
+div.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid var(--blue);
+}
+
+div.panel {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  height: 10vh;
+  background-color: white;
+  border-top: 2px solid var(--blue);
+}
+
+div.panel * {
+  margin: 0 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+  background-color: #fff;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 50px;
+  box-shadow: 0 2px 5px var(--blue);
+}
+
+button {
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+button.clear {
+  margin-left: auto;
+}
+
+input {
+  padding: 5px;
+  cursor: pointer;
+}
