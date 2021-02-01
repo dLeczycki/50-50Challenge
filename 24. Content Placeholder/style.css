@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eee;
+}
+
+.card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.card-header {
+  height: 200px;
+}
+
+.card-header img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 1.4em;
+  padding-bottom: 5px;
+}
+
+.card-text {
+  margin-bottom: 20px;
+  font-size: 1.2em;
+  color: #555;
+}
+
+.author {
+  display: flex;
+}
+
+.author-img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.author-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.author-info {
+  padding-left: 10px;
+}
+
+.author-name {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.date {
+  color: #999;
+}
+
+.bg-to-animate,
+.text-to-animate {
+  background-color: #dadada;
+  animation: animate-loading infinite 1s linear;
+  background-size: 200% 100%;
+}
+
+p.text-to-animate:nth-of-type(4) {
+  margin-bottom: 30px;
+}
+
+.card-title.text-to-animate {
+  margin-bottom: 50px;
+}
+
+.bg-to-animate {
+  background-image: linear-gradient(
+    90deg,
+    rgba(218, 218, 218, 1) 0%,
+    rgba(216, 216, 216, 1) 45%,
+    rgba(196, 196, 196, 1) 50%,
+    rgba(212, 212, 212, 1) 55%,
+    rgba(218, 218, 218, 1) 100%
+  );
+}
+
+.text-to-animate {
+  display: block;
+  width: 100%;
+  min-width: 100px;
+  height: 10px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  background-color: #dadada;
+  background-image: linear-gradient(
+    90deg,
+    rgba(218, 218, 218, 1) 0%,
+    rgba(216, 216, 216, 1) 45%,
+    rgba(196, 196, 196, 1) 50%,
+    rgba(212, 212, 212, 1) 55%,
+    rgba(218, 218, 218, 1) 100%
+  );
+}
+
+@keyframes animate-loading {
+  0% {
+    background-position: 150% 0;
+  }
+
+  100% {
+    background-position: -50% 0;
+  }
+}
