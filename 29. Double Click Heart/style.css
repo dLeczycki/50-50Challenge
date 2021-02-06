@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.fa-heart {
+  color: red;
+}
+
+div.container {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 400px;
+  text-align: center;
+}
+
+div.container strong {
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 1.4em;
+}
+
+div.container p {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+div.container div.image {
+  position: relative;
+  width: 100%;
+  min-height: 600px;
+  background-image: url("./images/unicorn.png");
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 6px 10px 6px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+}
+
+i.heart {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  color: red;
+  z-index: 1;
+  animation: love 1s 1 both;
+}
+
+@keyframes love {
+  0% {
+    opacity: 1;
+    font-size: 1em;
+  }
+
+  100% {
+    opacity: 0;
+    font-size: 10em;
+  }
+}
