@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: rgb(128, 0, 0);
+  --secondary-color: rgb(69, 8, 104);
+}
+
+html {
+  font-family: "Roboto", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 10px;
+}
+
+body {
+  height: 100vh;
+  background-color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+div.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+}
+
+input.search {
+  max-width: 800px;
+  min-width: 400px;
+  height: 50px;
+  padding: 10px 0 10px 20px;
+  margin-top: 50px;
+  line-height: 50px;
+  font-size: 2rem;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+input.search::placeholder {
+  color: rgb(182, 182, 182);
+}
+
+input.search:focus {
+  outline: 0;
+}
+
+div.card {
+  margin: 50px 1.5rem;
+  max-width: 800px;
+  padding: 40px;
+  background-color: var(--secondary-color);
+  display: flex;
+  border-radius: 10px;
+  color: white;
+}
+
+div.card h1 {
+  font-size: 4rem;
+}
+
+div.card img {
+  display: block;
+  width: 150px;
+  height: 150px;
+  margin: 0 20px 20px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-grow: 3;
+  border: 10px solid var(--primary-color);
+}
+
+div.card div.info {
+  flex-grow: 7;
+  font-size: 1.6rem;
+}
+
+h2.username {
+  font-size: 2.2=4rem;
+}
+
+p.bio {
+  display: inline-block;
+  margin-top: 20px;
+}
+
+div.user-details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+ul.repos {
+  margin-top: 15px;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+ul.repos li {
+  display: block;
+  margin: 10px 10px 0 0;
+  background-color: var(--primary-color);
+}
+
+ul.repos li a {
+  padding: 5px;
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 600px) {
+  div.card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h2.username {
+    text-align: center;
+  }
+}
