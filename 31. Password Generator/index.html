@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="../_Assets/font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Password Generator</h1>
+        <div class="password">
+            <div class="result"></div>
+            <i class="fas fa-clipboard"></i>
+        </div>
+        <label for="password-length">Password length<input type="number" id="password-length" value="8" min="8"
+                max="24"></label>
+        <label for="has-uppercase-letters">Include uppercase letters<input type="checkbox" name="has-uppercase-letters"
+                id="has-uppercase-letters"></label>
+        <label for="has-lowercase-letters">Include lowercase letters<input type="checkbox" name="has-lowercase-letters"
+                id="has-lowercase-letters"></label>
+        <label for="has-numbers">Include numbers<input type="checkbox" name="has-numbers" id="has-numbers"></label>
+        <label for="has-symbols">Include symbols<input type="checkbox" name="has-symbols" id="has-symbols"></label>
+        <button class="generate-password">Generate Password</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
