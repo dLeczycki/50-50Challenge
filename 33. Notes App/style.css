@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 10px;
+}
+
+body {
+    background-color: rgb(0, 209, 209);
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    margin: 20px 20px 0 0;
+    width: 150px;
+    padding: 15px 20px;
+    align-self: flex-end;
+    background-color: rgb(101, 192, 85);
+    color: white;
+    font-size: 2rem;
+    border: none;
+    cursor: pointer;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+button:focus,
+textarea:focus {
+    outline: none;
+}
+
+div.notes-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px;
+}
+
+div.note {
+    width: 23%;
+    margin: 0 1% 20px;
+}
+
+nav.panel {
+    height: 5rem;
+    padding: 1rem;
+    font-size: 3rem;
+    line-height: 3rem;
+    background-color: rgb(101, 192, 85);
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav.panel i {
+    display: block;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+nav.panel i.fa-save {
+    display: none;
+}
+
+div.note-text {
+    width: 100%;
+    min-height: 200px;
+    padding: 5px;
+    font-size: 2.4rem;
+    background-color: #fff;
+}
+
+textarea {
+    display: none;
+    resize: none;
+    width: 100%;
+    min-height: 200px;
+    padding: 5px;
+    font-size: 2.4rem;
+    border: none;
+}
+
+div.note.edited nav.panel i.fa-save,
+div.note.edited textarea {
+    display: block;
+}
+
+div.note.edited nav.panel i.fa-pencil-alt,
+div.note.edited div.note-text {
+    display: none;
+}
