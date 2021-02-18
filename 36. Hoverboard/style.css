@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.container {
+    display: grid;
+    grid-template-columns: repeat(20, 20px);
+    grid-template-rows: repeat(25, 20px);
+    grid-gap: 4px;
+}
+
+div.square {
+    background-color: #222;
+}
+
+.off {
+    transition: 1.2s;
+}
