@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    text-align: center;
+    background-image: linear-gradient(90deg, rgba(255, 245, 191, 1) 0%, rgba(109, 255, 253, 1) 100%);
+}
+
+h1 {
+    margin: 20px;
+}
+
+div.pokedex {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
+}
+
+div.poke-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+div.poke-card div.img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: 0 auto;
+}
+
+div.poke-card div.img img {
+    margin-top: 20px;
+    width: 90%;
+}
+
+div.poke-card p.id {
+    margin-top: 20px;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+div.poke-card h2.name {
+    padding: 20px;
+    font-size: 24px;
+}
+
+div.poke-card h2.name::first-letter {
+    text-transform: uppercase;
+}
