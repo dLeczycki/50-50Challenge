@@ -10,13 +10,12 @@ function loadBoxes() {
         for (let j = 0; j < 4; j++) {
             const box = document.createElement('div');
             box.classList.add('box');
-            box.style.top = i * 125 + 'px';
-            box.style.left = j * 125 + 'px';
+            box.style.backgroundPosition = `${-j * 125}px ${-i * 125}px`;
             container.appendChild(box);
         }
     }
 }
 
 function transform() {
-
+    container.classList.toggle('transform');
 }
