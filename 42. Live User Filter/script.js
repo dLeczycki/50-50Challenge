@@ -9,7 +9,6 @@ fetchUsers();
 
 function search(filter = '') {
     const users = [...usersList.querySelectorAll('li')];
-    console.log(users);
     const filteredUsers = users.filter(user => user.innerText.toLowerCase().includes(filter));
 
     users.forEach(user => user.classList.add('hide'));
