@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback UI Design</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../_Assets/font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="feedback-card">
+            <p>How satisfied are you with our <br> customer support performance?</p>
+            <div class="feedbacks">
+                <div class="feedback " data-feedback='Unhappy'>
+                    <p class="face">&#128542;</p>
+                    <p>Unhappy</p>
+                </div>
+                <div class="feedback" data-feedback='Neutral'>
+                    <p class="face">&#128528;</p>
+                    <p>Neutral</p>
+                </div>
+                <div class="feedback active" data-feedback='Satisfied'>
+                    <p class="face">&#128512;</p>
+                    <p>Satisfied</p>
+                </div>
+            </div>
+        </div>
+        <button>Send Review</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
