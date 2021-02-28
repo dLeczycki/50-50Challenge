@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    height: 100vh;
+}
+
+div.logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    overflow: hidden;
+    text-align: center;
+    z-index: -1;
+}
+
+div.logo img {
+    width: 80%;
+    object-fit: cover;
+}
+
+div.logo p {
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+button {
+    padding: 5px;
+    font-size: 26px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+button:focus {
+    outline: none;
+}
+
+button.open-nav-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+}
+
+button.close-nav-btn {
+    color: #999;
+}
+
+nav.black-layer {
+    width: 90%;
+    max-width: 360px;
+    height: 100vh;
+    background-color: #333;
+    transition-delay: .6s;
+}
+
+nav.black-layer.visible {
+    transition-delay: 0s;
+
+}
+
+div.red-layer {
+    width: calc(100% - 20px);
+    height: 100%;
+    background-color: red;
+    transition-delay: .3s;
+}
+
+nav.black-layer.visible div.red-layer {}
+
+div.white-layer {
+    width: calc(100% - 20px);
+    height: 100%;
+    background-color: #fff;
+    transition-delay: 0s;
+}
+
+nav.black-layer.visible div.white-layer {
+    transition-delay: .6s;
+}
+
+.layer {
+    position: relative;
+    top: 0;
+    left: -100%;
+    transition: .3s ease-in-out;
+}
+
+nav.visible,
+nav.visible .layer {
+    left: 0;
+}
+
+nav img {
+    margin: 20px 0 0 20px;
+    width: 100px;
+}
+
+nav button.close-nav-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+nav ul {
+    margin-left: 20px;
+    list-style-type: none;
+}
+
+nav ul li {
+    text-transform: uppercase;
+    margin: 20px 0;
+    cursor: pointer;
+}
