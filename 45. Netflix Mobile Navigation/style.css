@@ -79,8 +79,6 @@ div.red-layer {
     transition-delay: .3s;
 }
 
-nav.black-layer.visible div.red-layer {}
-
 div.white-layer {
     width: calc(100% - 20px);
     height: 100%;
