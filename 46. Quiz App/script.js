@@ -40,6 +40,7 @@ function submitQuestion() {
     const answerId = parseInt(selectedAnswer.id);
 
     if (!selectedAnswer) return;
+    if (activeQuestion.correct[answerId]) score++;
 
     activeQuestionIndex++;
     if (activeQuestionIndex === questions.length) {
@@ -47,7 +48,6 @@ function submitQuestion() {
         return;
     }
 
-    if (activeQuestion.correct[answerId]) score++;
     createCard(questions[activeQuestionIndex]);
 }
 

@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Raleway', sans-serif;
+    font-size: 10px;
+}
+
+body {
+    height: 100vh;
+    background-color: rgb(244, 242, 255);
+}
+
+div.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    max-width: 90%;
+    padding: 30px;
+    background-color: rgb(54, 98, 199);
+    color: white;
+    border-radius: 10px;
+}
+
+div.loading-bar {
+    width: 90%;
+    height: 6px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.2);
+    overflow-x: hidden;
+}
+
+div.loading-bar::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    animation: load 10s linear both infinite;
+}
+
+div.testimonial {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0 20px;
+}
+
+div.testimonial i {
+    color: rgba(255, 255, 255, 0.2);
+    font-size: 3rem;
+}
+
+div.testimonial i.fa-quote-left {
+    align-self: flex-end;
+}
+
+div.testimonial div.testimonial-text {
+    flex-grow: 1;
+    padding: 5px 20px;
+    font-size: 1.6rem;
+    line-height: 1.6em;
+    text-align: justify;
+}
+
+div.user {
+    display: flex;
+    justify-content: center;
+}
+
+div.user img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+div.user .user-info {
+    margin-top: 5px;
+    padding-left: 10px;
+}
+
+p.name {
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+
+p.post {
+    margin-top: 10px;
+    font-size: 1.6rem;
+}
+
+@keyframes load {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
