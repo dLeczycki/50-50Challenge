@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: 'Press Start 2P', cursive;
+}
+
+body {
+    height: 100vh;
+    background-color: rgb(76, 76, 231);
+    color: white;
+    overflow: hidden;
+}
+
+div.game.screen {
+    height: 100vh;
+}
+
+div.panel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 3rem;
+    padding: 30px;
+    height: 10vh;
+}
+
+div.game-board {
+    position: relative;
+    height: 90vh;
+}
+
+img.insect {
+    position: absolute;
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: .5s;
+}
+
+img.insect.killing {
+    transform: scale(0);
+}
