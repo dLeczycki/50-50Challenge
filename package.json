@@ -1,0 +1,22 @@
+{
+  "name": "50-50challenge",
+  "version": "1.0.0",
+  "description": "50 days 50 projects challenge inspired by repo of [Brad Traversy](https://github.com/bradtraversy). Projects are made with HTML/CSS/JS. Although there are ready applications on brads repo, I watched result of his ideas and coded them only by myself.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dLeczycki/50-50Challenge.git"
+  },
+  "author": "Daniel Łęczycki",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dLeczycki/50-50Challenge/issues"
+  },
+  "homepage": "https://github.com/dLeczycki/50-50Challenge#readme",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
+}

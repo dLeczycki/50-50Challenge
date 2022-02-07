@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --radius: 20px;
+}
+
+h1 {
+  font-family: 'Open Sans', sans-serif;
+}
+
+section.projects-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card {
+  display: flex;
+  margin-bottom: 10px;
+  flex-direction: column;
+  align-items: center;
+  flex: 0 1 calc(20% - 20px);
+  border: 1px solid gray;
+  border-radius: var(--radius);
+}
+
+.card img {
+  height: 200px;
+  width: 100%;
+  border-top-left-radius: var(--radius);
+  border-top-right-radius: var(--radius);
+}
+
+.card a {
+  margin: .6em 0;
+}
